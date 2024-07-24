@@ -12,20 +12,38 @@
         <p id="description">Please write down all the information</p>
         <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
             <fieldset>
-                <label id="name-label" for="name">Your Name: <input type="text" id="name" placeholder="Enter your name"/></label>
-                <label id="email-label" for="email">Your Email: <input type="email" id="email" placeholder="Enter your email" /></label>
-                <label id="number-label" for="number">Your Age: <input type="number" id="number" min="18" max="120" placeholder="Enter your age" /></label>
+                <label id="name-label" for="name">Your Name: <input type="text" id="name" placeholder="Enter your name" required/></label>
+                <label id="email-label" for="email">Your Email: <input type="email" id="email" placeholder="Enter your email" required/></label>
+                <label id="number-label" for="number">Your Age: <input type="number" id="number" min="18" max="120" placeholder="Enter your age" required/></label>
             </fieldset>
             <fieldset>
-                <label for="dropdown">What is your carrier choice?
+                <p>What is your carrier choice?</p>
                     <select id="dropdown">
                         <option>Choose only one</option>
                         <option>Front-end Developer</option>
                         <option>Back-end Developer</option>
                         <option>Full-stack Developer</option>
                     </select>
-                </label>
             </fieldset>
+            <fieldset>
+                <p>Where did you hear about us?</p>
+                <label for="internet"><input name="about-us" id="internet" type="radio"/>Internet</label>
+                <label for="tv"><input name="about-us" id="tv" type="radio"/>Television</label>
+                <label for="newspaper"><input name="about-us" id="newspaper" type="radio"/>Newspaper</label>
+                <label for="other"><input name="about-us" id="other" type="radio"/>Other</label>
+            </fieldset>
+            <fieldset>
+                <p>What are you learning right now?</p>
+                <label for="js"><input id="js" value="0" type="checkbox">JavaScript</label>
+                <label for="html"><input id="html" value="1" type="checkbox">HTML</label>
+                <label for="css"><input id="css" value="2" type="checkbox">CSS</label>
+                <label for="tailwind"><input id="tailwind" value="3" type="checkbox">Tailwind</label>
+            </fieldset>
+            <fieldset>
+                <p>Do you have any suggestions?</p>
+                <textarea placeholder="I think you should..."></textarea>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit" />
         </form>
     </body>
 </html>
