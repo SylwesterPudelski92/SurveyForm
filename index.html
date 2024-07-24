@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="styles.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please write down all the information</p>
+        <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+            <fieldset>
+                <label id="name-label" for="name">Your Name: <input type="text" id="name" placeholder="Enter your name"/></label>
+                <label id="email-label" for="email">Your Email: <input type="email" id="email" placeholder="Enter your email" /></label>
+                <label id="number-label" for="number">Your Age: <input type="number" id="number" min="18" max="120" placeholder="Enter your age" /></label>
+            </fieldset>
+            <fieldset>
+                <label for="dropdown">What is your carrier choice?
+                    <select id="dropdown">
+                        <option>Choose only one</option>
+                        <option>Front-end Developer</option>
+                        <option>Back-end Developer</option>
+                        <option>Full-stack Developer</option>
+                    </select>
+                </label>
+            </fieldset>
+        </form>
+    </body>
+</html>
